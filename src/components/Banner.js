@@ -8,10 +8,10 @@ export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(200 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
-  const period = 2000;
+  const toRotate = [ "Web Developer  ", "Web Designer  ", "UI/UX Designer  " ];
+  const period = 200;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -28,9 +28,9 @@ export const Banner = () => {
 
     setText(updatedText);
 
-    if (isDeleting) {
-      setDelta(prevDelta => prevDelta / 2);
-    }
+    // if (isDeleting) {
+    //   setDelta(prevDelta => prevDelta / 2);
+    // }
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
@@ -40,7 +40,7 @@ export const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(500);
+      setDelta(200);
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
@@ -55,8 +55,8 @@ export const Banner = () => {
               Welcome to my Portfolio
             </span>
             <h1>{`Hi I'm Asad `}
-              <span className="wrap">{text}</span>
             </h1>
+            <h2><span className="wrap">&nbsp;{text}</span></h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
