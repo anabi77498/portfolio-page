@@ -5,6 +5,9 @@ import { NavBar } from './components/NavBar';
 import { Banner } from './components/Banner';
 import { Interests } from './components/Interests';
 import { Projects } from './components/Projects';
+import { Contact } from './components/Contact';
+import { Footer } from './components/Footer';
+import { Skills } from './components/Skills';
 
 function App() {
   return (
@@ -13,7 +16,10 @@ function App() {
       <header className="App-header">
       <Banner />
       <Interests />
+      <Skills />
       <Projects />
+      <Contact />
+      <Footer />
       </header>
     </div>
   );
