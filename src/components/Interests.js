@@ -1,6 +1,8 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import IconBackend from "../assets/img/backend.png";
+import IconMl from "../assets/img/artificial-intelligence-5.svg";
+import IconCloud from "../assets/img/cloud-computing-4276.svg";
+import IconSust from "../assets/img/sustainable.png";
+
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
@@ -49,27 +51,27 @@ export const Interests = () => {
             </p>
             <Carousel responsive={responsive} infinite={true} className="skill-slider">
               <div className="item">
-                <img src={meter1} alt="Image" />
+                <img src={IconBackend} alt="Image" />
                 <h5>Backend Development</h5>
               </div>
               <div className="item">
-                <img src={meter2} alt="Image" />
+                <img src={IconMl} alt="Image" />
                 <h5>Machine Learning</h5>
               </div>
               <div className="item">
-                <img src={meter1} alt="Image" />
+                <img src={IconCloud} alt="Image" />
                 <h5>Cloud Architecture</h5>
               </div>
               <div className="item">
-                <img src={meter3} alt="Image" />
+                <img src={IconSust} alt="Image" />
                 <h5>Sustainability</h5>
               </div>
               <div className="item">
-                <img src={meter3} alt="Image" />
+                <img src={IconSust} alt="Image" />
                 <h5>Weight Training</h5>
               </div>
               <div className="item">
-                <img src={meter3} alt="Image" />
+                <img src={IconSust} alt="Image" />
                 <h5>Muay Thai</h5>
               </div>
             </Carousel>
