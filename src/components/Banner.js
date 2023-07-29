@@ -1,9 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/img/header-img.svg"
+import headerImg from "../assets/img/pfp.jpeg"
 import { useState, useEffect } from "react";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import TextTransitions, { presets } from 'react-text-transition'
 
 
 export const Banner = () => {
@@ -11,42 +12,17 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(150 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer  ", "Web Designer  ", "UI/UX Designer  " ];
+  const [index, setIndex] = useState(0);
+  const toRotate = [ "Student", "Software Developer", "Creative Problem Solver", "Innovator" ];
   const period = 150;
 
   useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-
-    return () => { clearInterval(ticker) };
-  }, [text])
-
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
-
-    setText(updatedText);
-
-    // if (isDeleting) {
-    //   setDelta(prevDelta => prevDelta / 2);
-    // }
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setIndex(prevIndex => prevIndex - 1);
-      setDelta(period);
-    } else if (isDeleting && updatedText === '') {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setIndex(1);
-      setDelta(150);
-    } else {
-      setIndex(prevIndex => prevIndex + 1);
-    }
-  }
+    const intervalId = setInterval(
+      () => setIndex((index) => index + 1),
+      3000, // every 3 seconds
+    );
+    return () => clearTimeout(intervalId);
+  }, []);
 
   return (
     <section className="banner" id="home">
@@ -56,16 +32,19 @@ export const Banner = () => {
             <TrackVisibility>
             {({ isVisible }) =>
             <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-            <span className="tagline">
-              Welcome to my Portfolio
-            </span>
-            <h1>{`Hi I'm Asad `}
+            <h1>{`Hi, I'm Asad Nabi`}
             </h1>
-            <h2><span className="wrap">&nbsp;{text}</span></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+            <h2>
+              <TextTransitions delay={0} springConfig={presets.slow}>{toRotate[index % toRotate.length]}</TextTransitions>
+              </h2>
+            <div className="p-text">
+            <p>I am a technologist, driven by my passion for technology, 
+              innovation, and new experiences.
             </p>
+            <p>I’m a senior year student and masters candidate at Cornell University interested in data solutions and impact through technology. 
+              My specializations lie in backend development, cloud computing and data science. </p>      
+            
+            </div>
             <button onClick={() => console.log('connect')}>
               Let's Connect 
               <ArrowRightCircle size={25}/>
