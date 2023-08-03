@@ -12,7 +12,7 @@ export const Maintenance = () => {
               <div className="p-text">
               <p>You've reached Asad Nabi's Portfolio Page. Updates are in progress and my site is currently undergoing maintenance. Please check back soon!
               </p>
-              <p>Feel free to contact me at <a href = "mailto: an448@cornell.edu">an448@cornell.edu</a> or message me at&nbsp;<a href="https://www.linkedin.com/in/asadnabi7/">LinkedIn </a></p>      
+              <p>Feel free to contact me at <a href = "mailto: an448@cornell.edu">an448@cornell.edu</a> or message me on&nbsp;<a href="https://www.linkedin.com/in/asadnabi7/">LinkedIn </a></p>      
               </div>
             </div>
       </Container>
