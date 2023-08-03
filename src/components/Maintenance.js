@@ -7,7 +7,7 @@ export const Maintenance = () => {
       <Container>
         {/* <Row className="align-items-center"> */}
             <div>
-            <h2>{`My portfolio is currently unavailable for site updates`}
+            <h2>{`My portfolio is currently unavailable due to site updates`}
             </h2>
               <div className="p-text">
               <p>You've reached Asad Nabi's Portfolio Page. Updates are in progress and my site is currently undergoing maintenance. Please check back soon!
