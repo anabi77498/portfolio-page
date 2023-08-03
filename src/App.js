@@ -8,11 +8,13 @@ import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { Skills } from './components/Skills';
+import { Maintenance } from './components/Maintenance';
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      <Maintenance />
+      {/* <NavBar />
       <header className="App-header">
       <Banner />
       <Interests />
@@ -20,7 +22,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-      </header>
+      </header> */}
     </div>
   );
 }

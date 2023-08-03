@@ -41,7 +41,7 @@ export const Banner = () => {
             <p>I am a technologist, driven by my passion for technology, 
               innovation, and new experiences.
             </p>
-            <p>I’m a senior year student and masters candidate at Cornell University interested in data solutions and impact through technology. 
+            <p>Current senior year student and masters candidate at Cornell University interested in data solutions and impact through technology. 
               My specializations lie in backend development, cloud computing and data science. </p>      
             
             </div>

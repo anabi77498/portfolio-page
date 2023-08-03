@@ -238,6 +238,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.banner .p-text {
+  margin-top: 20px;
+  font-size: 20px;
+}
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -257,8 +262,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
-  font-size: 18px;
+  color: #cecece;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
@@ -440,6 +444,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 0;
   width: 100%;
 }
+
+.proj-link {
+  color: white
+}
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
   opacity: 1;
@@ -580,3 +588,53 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 96px;
   height: 96px;
 }
+
+/************ maintenance CSS **************/
+
+/************ Banner Css ************/
+.maintenance {
+  margin-top: 0;
+  padding: 200px 0 100px 0;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.maintenance .p-text {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.maintenance .tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.maintenance h1 {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+.maintenance p {
+  color: #cecece;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+
+.maintenance a {
+  color: #6b90fd;
+}
+
+.img-maintenance {
+  height: 150px;
+  width: 150px
+}
+

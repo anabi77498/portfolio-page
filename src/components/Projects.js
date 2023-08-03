@@ -9,45 +9,72 @@ import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const projects = [
+  const projects_personal = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "The Developer Dictionary",
+      description: "Full-stack PHP application for simplifying technologies",
       imgUrl: projImg2,
+      siteUrl: "https://developer-dictionary.fly.dev"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Ithaca Harvest Festival Website",
+      description: "Website designed for the Ithaca Harvest Festival",
       imgUrl: projImg1,
+      siteUrl: "https://pages.github.coecis.cornell.edu/info1300-2022fa/an448-project3/"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Planetary Stewardship based on EPA Indicators",
+      description: "Hackathon for non-profits",
       imgUrl: projImg2,
+      siteUrl: "https://github.com/anabi77498/EPA-indicators-CC"
+    },
+  ]
+
+  const hackathon_projects = [
+    {
+      title: "JPMorgan & Chase co. Code for Good",
+      description: "Hackathon for non-profits (private repository)",
+      imgUrl: projImg2,
+      siteUrl: "https://2021.igem.org/Team:Stony_Brook"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "JPMorgan & Chase co. Innovation Week",
+      description: "Internal Hackathon across JPMC technology teams (private repository)",
       imgUrl: projImg3,
+      siteUrl: "#projects"
+    },
+  ]
+  
+  const team_projects = [
+    {
+      title: "Pac-Coli",
+      description: "Stony Brook IGEM research team project",
+      imgUrl: projImg1,
+      siteUrl: "https://2021.igem.org/Team:Stony_Brook/Description"
+    },
+    {
+      title: "Juice Finance App",
+      description: "OCaml CLI application for managing finances",
+      imgUrl: projImg3,
+      siteUrl: "https://github.com/anabi77498/juice"
+    },
+    {
+      title: "Autonomous Crop System (NASA)",
+      description: "Software Engineering lead for Autonomous Crop Device Research Paper in NASA Research Proposal Writing Experience",
+      imgUrl: projImg2,
+      siteUrl: "https://2021.igem.org/Team:Stony_Brook"
+    },
+    {
+      title: "Stocks and Tweets",
+      description: "Hackathon for non-profits",
+      imgUrl: projImg2,
+      siteUrl: "https://pages.github.coecis.cornell.edu/info2950-s23/project-brilliant-hitmontop/"
     },
   ];
 
   return (
     <section className="project" id="projects">
       <Container>
-      <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
         <Row>
           <Col size={12}>
                 <h2>Projects</h2>
@@ -64,13 +91,13 @@ export const Projects = () => {
                       <Nav.Link eventKey="third"><span className="scale-font">Volunteer Projects</span></Nav.Link>
                     </Nav.Item>
                   </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                  <Tab.Content id="slideInUp" >
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          projects_personal.map((project, index) => {
                             return (
-                              <ProjectCard
+                              <ProjectCard 
                                 key={index}
                                 {...project}
                                 />
@@ -85,7 +112,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="second">
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          team_projects.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -99,7 +126,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="third">
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          hackathon_projects.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -114,8 +141,6 @@ export const Projects = () => {
                 </Tab.Container>
           </Col>
         </Row>
-        </div>}
-        </TrackVisibility>
       </Container>
       <img className="background-image-right" src={colorSharp2}></img>
     </section>
