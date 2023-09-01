@@ -54,8 +54,8 @@ export const NavBar = () => {
                 <a href="https://github.com/anabi77498"><img className="resize" src={navIcon2} alt="" /></a>
                 <a href="https://drive.google.com/file/d/1PhVwRcf-kU6c3gex7sg01lmp7ZtS8XNE/view?usp=sharing"><img className="resize" src={navIcon3} alt="" /></a>
               </div>
-              <HashLink to='#connect'>
-                <button className="connect-button"><span>Let’s Connect</span></button>
+              <HashLink to='#connect' onClick={() => onUpdateActiveLink(" ")}>
+                <button className="connect-button" ><span>Let’s Connect</span></button>
               </HashLink>
             </span>
           </Navbar.Collapse>
