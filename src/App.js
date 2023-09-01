@@ -13,8 +13,8 @@ import { Maintenance } from './components/Maintenance';
 function App() {
   return (
     <div className="App">
-      <Maintenance />
-      {/* <NavBar />
+      {/* <Maintenance /> */}
+      <NavBar />
       <header className="App-header">
       <Banner />
       <Interests />
@@ -22,7 +22,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-      </header> */}
+      </header>
     </div>
   );
 }

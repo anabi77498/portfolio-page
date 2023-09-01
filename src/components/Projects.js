@@ -1,6 +1,16 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
+import devDict from "../assets/img/dev-dict.png"
+import appleFest from "../assets/img/applefest.png"
+import planStew from "../assets/img/env.png"
+import paccoli from "../assets/img/paccoli.png"
+import juice from "../assets/img/juice.png"
+import nasa from "../assets/img/nasa.jpg"
+import stocksTweets from "../assets/img/stocks-tweets.png"
+import jpmcCfg from "../assets/img/jpmc-cfg.jpg"
+import jpmc from "../assets/img/jpmc.png"
+import columbiaHacks from "../assets/img/columbia-hacks.png"
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -13,61 +23,69 @@ export const Projects = () => {
     {
       title: "The Developer Dictionary",
       description: "Full-stack PHP application for simplifying technologies",
-      imgUrl: projImg2,
+      imgUrl: devDict,
       siteUrl: "https://developer-dictionary.fly.dev"
     },
     {
       title: "Ithaca Harvest Festival Website",
       description: "Website designed for the Ithaca Harvest Festival",
-      imgUrl: projImg1,
+      imgUrl: appleFest,
       siteUrl: "https://pages.github.coecis.cornell.edu/info1300-2022fa/an448-project3/"
     },
     {
-      title: "Planetary Stewardship based on EPA Indicators",
-      description: "Hackathon for non-profits",
-      imgUrl: projImg2,
+      title: "Planetary Stewardship & EPA Indicators",
+      description: "ML project centered around climate change insights",
+      imgUrl: planStew,
       siteUrl: "https://github.com/anabi77498/EPA-indicators-CC"
     },
   ]
 
   const hackathon_projects = [
     {
-      title: "JPMorgan & Chase co. Code for Good",
+      title: "JPMC Code for Good",
       description: "Hackathon for non-profits (private repository)",
-      imgUrl: projImg2,
+      imgUrl: jpmcCfg,
       siteUrl: "https://2021.igem.org/Team:Stony_Brook"
     },
     {
-      title: "JPMorgan & Chase co. Innovation Week",
-      description: "Internal Hackathon across JPMC technology teams (private repository)",
-      imgUrl: projImg3,
+      title: "JPMC Innovation Hackathon",
+      description: "Internal Hackathon across JPMC (private repository)",
+      imgUrl: jpmc,
       siteUrl: "#projects"
     },
+    {
+      title: "Columbia DivHacks",
+      description: "(coming soon)",
+      imgUrl: columbiaHacks,
+      siteUrl: "#projects"
+    }
   ]
+
+  // "Selective hackathon at Columbia University dedicated to diversity in technology"
   
   const team_projects = [
     {
       title: "Pac-Coli",
       description: "Stony Brook IGEM research team project",
-      imgUrl: projImg1,
+      imgUrl: paccoli,
       siteUrl: "https://2021.igem.org/Team:Stony_Brook/Description"
     },
     {
       title: "Juice Finance App",
       description: "OCaml CLI application for managing finances",
-      imgUrl: projImg3,
+      imgUrl: juice,
       siteUrl: "https://github.com/anabi77498/juice"
     },
     {
-      title: "Autonomous Crop System (NASA)",
-      description: "Software Engineering lead for Autonomous Crop Device Research Paper in NASA Research Proposal Writing Experience",
-      imgUrl: projImg2,
+      title: "Autonomous Crop System",
+      description: "Software project lead for research project at NASA Proposal Writing Experience",
+      imgUrl: nasa,
       siteUrl: "https://2021.igem.org/Team:Stony_Brook"
     },
     {
       title: "Stocks and Tweets",
-      description: "Hackathon for non-profits",
-      imgUrl: projImg2,
+      description: "Data Science project analyzing tweet frequency, sentiments and influence on stock price changes",
+      imgUrl: stocksTweets,
       siteUrl: "https://pages.github.coecis.cornell.edu/info2950-s23/project-brilliant-hitmontop/"
     },
   ];
@@ -78,7 +96,7 @@ export const Projects = () => {
         <Row>
           <Col size={12}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>Below are projects that i've worked on in the past few years as a Computer Science student.</p> <p>My personal favorite is the Developer Dictionary and it is a passion project that I continue to refine to this day</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -107,7 +125,7 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>Below are projects that i've worked on in the past few years as a Computer Science student. My personal favorite is the Developer Dictionary and it is a passion project that I continue to refine on till this day </p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
                       <Row>

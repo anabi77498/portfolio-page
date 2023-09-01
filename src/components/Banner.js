@@ -41,20 +41,16 @@ export const Banner = () => {
             <p>I am a technologist, driven by my passion for technology, 
               innovation, and new experiences.
             </p>
-            <p>Current senior year student and masters candidate at Cornell University interested in data solutions and impact through technology. 
-              My specializations lie in backend development, cloud computing and data science. </p>      
-            
+            <p>Current senior year student and masters candidate at Cornell University interested in software engineering, data-driven solutions and impact through technology. 
+              My specializations lie in backend development and data science. </p>      
             </div>
-            <button onClick={() => console.log('connect')}>
-              Let's Connect 
-              <ArrowRightCircle size={25}/>
-            </button>
             </div>}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt="Header Img" />
           </Col>
+
         </Row>
       </Container>
     </section>

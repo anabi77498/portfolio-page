@@ -2,7 +2,8 @@ import IconBackend from "../assets/img/backend.png";
 import IconMl from "../assets/img/artificial-intelligence-5.svg";
 import IconCloud from "../assets/img/cloud-computing-4276.svg";
 import IconSust from "../assets/img/sustainable.png";
-
+import IconGym from "../assets/img/gym.svg"
+import IconMuayThai from "../assets/img/muay-thai.svg"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
@@ -45,10 +46,16 @@ export const Interests = () => {
             <h2>
               Interests
             </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud 
+            <div className="interests-p">
+            <p>As a life-long student, I enjoy learning new things and maintain a breadth of experience across Computer Science fields. 
+              My academic curriculum has been an infusion of Data Science and Machine Learning, CS fundamentals and Full-stack Development courses. As such,
+              this is where my interests lie and I am looking to expand on these skills as I grow as a Software Engineer.
             </p>
+            <p>
+              Outside my role as a technologist, I am an avid gym-goer, Muay-Thai practicioner and overall fitness oriented person.
+              I also love learning about sustainability and exploring new places!
+            </p>
+            </div>
             <Carousel responsive={responsive} infinite={true} className="skill-slider">
               <div className="item">
                 <img src={IconBackend} alt="Image" />
@@ -67,11 +74,11 @@ export const Interests = () => {
                 <h5>Sustainability</h5>
               </div>
               <div className="item">
-                <img src={IconSust} alt="Image" />
+                <img src={IconGym} alt="Image" />
                 <h5>Weight Training</h5>
               </div>
               <div className="item">
-                <img src={IconSust} alt="Image" />
+                <img src={IconMuayThai} alt="Image" />
                 <h5>Muay Thai</h5>
               </div>
             </Carousel>
