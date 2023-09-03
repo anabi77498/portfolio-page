@@ -39,7 +39,7 @@ export const Banner = () => {
               </h2>
             <div className="p-text">
             <p>I am a software engineer 👨🏽‍💻 driven by my passion for technology, 
-              innovation, and new experiences ⚡
+              innovation, and impact ⚡
             </p>
             <p>Current senior year student and masters candidate at Cornell University 🐻 Proudly from Queens, NYC 🗽 I'm interested in social impact through tech, particularly in low-income communities 🌱 
               My specializations lie in backend development and data science. </p>      
