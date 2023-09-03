@@ -31,17 +31,17 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
             {({ isVisible }) =>
-            <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
+            <div className={""}>
             <h1>{`Hi, I'm Asad Nabi`}
             </h1>
             <h2>
               <TextTransitions delay={0} springConfig={presets.slow}>{toRotate[index % toRotate.length]}</TextTransitions>
               </h2>
             <div className="p-text">
-            <p>I am a technologist, driven by my passion for technology, 
-              innovation, and new experiences.
+            <p>I am a software engineer 👨🏽‍💻 driven by my passion for technology, 
+              innovation, and new experiences ⚡
             </p>
-            <p>Current senior year student and masters candidate at Cornell University interested in software engineering, data-driven solutions and impact through technology. 
+            <p>Current senior year student and masters candidate at Cornell University 🐻 Proudly from Queens, NYC 🗽 I'm interested in social impact through tech, particularly in low-income communities 🌱 
               My specializations lie in backend development and data science. </p>      
             </div>
             </div>}

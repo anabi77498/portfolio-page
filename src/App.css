@@ -110,7 +110,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
-    background-color: rgb(28, 33, 57);
+    /* background-color: rgb(28, 33, 57); */
 }
 span.navbar-text {
     display: flex;
@@ -250,13 +250,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
   nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
-    background-color: rgb(28, 33, 57);
+    /* background-color: rgb(28, 33, 57); */
 }
 .social-icon {
   display: inline-block;
   margin-left: 10px;
   min-width: 150px;
 }
+}
+
+.nav-items {
+  display: flex;
 }
 
 /************ Banner Css ************/
@@ -330,6 +334,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
+
+@media screen and (max-width: 575px) {
+  .banner {
+    padding-left: 20px;
+    padding-right: 20px
+  }
+}
+
+
 /************ Skills Css ************/
 .skill {
   padding: 0 0 50px 0;
@@ -370,6 +383,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
   width: 40%;
   z-index: -4;
+}
+
+.interests-p p{
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.interests-p {
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .item h5 {
+    /* background-color: green;
+    border: solid 2px blue; */
+    max-width: 150px;
+    margin-left: 10px
+  }
 }
 
 /************ Projects Css ************/
@@ -503,6 +534,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+.proj-imgbx {
+  border: solid rgb(80, 71, 145)
+}
+
+.proj-card {
+  margin: 0 auto
+}
+
 @media screen and (max-width: 830px) {
   .scale-font {
     font-size: 18px;
@@ -515,7 +554,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
-/************ Projects Css ************/
+@media screen and (max-width: 575px) {
+  .scale-font {
+    font-size: 20px;
+  }
+}
+
+/************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #0c071f 81.58%);
   padding: 60px 0 200px 0;
@@ -587,6 +632,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 
+@media screen and (max-width: 575px) {
+  .contact form {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 
 /************ Footer Css ************/
 .footer {
@@ -626,7 +678,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 /************ maintenance CSS **************/
 
-/************ Banner Css ************/
 .maintenance {
   margin-top: 0;
   padding: 200px 0 100px 0;
@@ -673,23 +724,3 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 150px
 }
 
-.nav-items {
-  display: flex;
-}
-
-.interests-p p{
-  margin-bottom: 50px;
-  margin-top: 30px;
-}
-
-.interests-p {
-  margin-bottom: 100px;
-}
-
-.proj-imgbx {
-  border: solid rgb(80, 71, 145)
-}
-
-.proj-card {
-  margin: 0 auto
-}

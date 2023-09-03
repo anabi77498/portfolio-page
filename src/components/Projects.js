@@ -45,7 +45,7 @@ export const Projects = () => {
       title: "JPMC Code for Good",
       description: "Hackathon for non-profits (private repository)",
       imgUrl: jpmcCfg,
-      siteUrl: "https://2021.igem.org/Team:Stony_Brook"
+      siteUrl: "https://www.jpmorganchase.com/news-stories/five-things-you-need-to-know-about-code-for-good"
     },
     {
       title: "JPMC Innovation Hackathon",
@@ -57,7 +57,7 @@ export const Projects = () => {
       title: "Columbia DivHacks",
       description: "(coming soon)",
       imgUrl: columbiaHacks,
-      siteUrl: "#projects"
+      siteUrl: "https://columbiadivhacks.com"
     }
   ]
 
@@ -80,7 +80,7 @@ export const Projects = () => {
       title: "Autonomous Crop System",
       description: "Software project lead for research project at NASA Proposal Writing Experience",
       imgUrl: nasa,
-      siteUrl: "https://2021.igem.org/Team:Stony_Brook"
+      siteUrl: "https://www.lspace.asu.edu"
     },
     {
       title: "Stocks and Tweets",
@@ -103,7 +103,7 @@ export const Projects = () => {
                       <Nav.Link eventKey="first"><span className="scale-font">Personal Projects</span></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second"><span className="scale-font">Team Projects</span></Nav.Link>
+                      <Nav.Link eventKey="second"><span className="scale-font scale-font2">Team Projects</span></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="third"><span className="scale-font">Volunteer Projects</span></Nav.Link>

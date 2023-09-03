@@ -56,7 +56,7 @@ export const Skills = () => {
             <h2>
               Skills
             </h2>
-            <p>Just a few technologies I love to work with. This is not an exhaustive list! OCaml is definitely special in my eyes. Still a newbie in TensorFlow as of now but soon i'll get their :)
+            <p>Just a few technologies I love to work with. This is not an exhaustive list! OCaml is definitely special in my eyes 🐪 Still new to TensorFlow as of now but learning quickly :)
             </p>
             
             <Col>

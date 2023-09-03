@@ -52,7 +52,7 @@ export const Interests = () => {
               this is where my interests lie and I am looking to expand on these skills as I grow in my Software Engineering journey.
             </p>
             <p>
-              Outside my role as a technologist, I am an avid gym-goer, Muay-Thai practicioner and overall fitness oriented person.
+              Outside my role as a technologist, I am an avid gym-goer, Muay-Thai practicioner and nature oriented person.
               I also love learning about sustainability and exploring new places!
             </p>
             </div>
