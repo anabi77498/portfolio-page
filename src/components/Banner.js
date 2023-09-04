@@ -42,7 +42,7 @@ export const Banner = () => {
               innovation, and impact ⚡
             </p>
             <p>Current senior year student and masters candidate at Cornell University 🐻 Proudly from Queens, NYC 🗽 I'm interested in social impact through tech, particularly in low-income communities 🌱 
-              My specializations lie in backend development and data science. </p>      
+              My expertise lies in backend development and data science 💻 </p>      
             </div>
             </div>}
             </TrackVisibility>

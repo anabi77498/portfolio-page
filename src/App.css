@@ -560,6 +560,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
+@media screen and (max-width: 470px) {
+  .scale-font {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .scale-font {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .scale-font {
+    font-size: 13px;
+  }
+}
+
 /************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #0c071f 81.58%);
