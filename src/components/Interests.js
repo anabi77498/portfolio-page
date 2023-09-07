@@ -48,7 +48,7 @@ export const Interests = () => {
             </h2>
             <div className="interests-p">
             <p>As a life-long student, I enjoy learning new things and maintain a breadth of experience across Computer Science fields. 
-              My academic curriculum has been an infusion of Data Science and Machine Learning, CS fundamentals and Full-stack Development courses. Accordingly,
+              My academic curriculum has been an infusion of data science and machine learning, CS fundamentals and full-stack development courses. Accordingly,
               this is where my interests lie and I am looking to expand on these skills as I grow in my Software Engineering journey.
             </p>
             <p>
