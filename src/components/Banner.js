@@ -41,8 +41,8 @@ export const Banner = () => {
             <p>I am a software engineer 👨🏽‍💻 driven by my passion for technology, 
               innovation, and impact ⚡
             </p>
-            <p>Current senior year student and masters candidate at Cornell University 🐻 Proudly from Queens, NYC 🗽 I'm interested in social impact through tech, particularly in low-income communities 🌱 
-              My expertise lies in backend development and data science 💻 </p>      
+            <p>Current senior year student and masters candidate at Cornell University 🐻 Proudly from Queens, NYC 🗽 I'm interested in sustainability 🌱, financial accessibility 💳 and social impact through technology, particularly to empower low-income communities 💡 
+              My expertise lies in full-stack development and data science 💻 </p>      
             </div>
             </div>}
             </TrackVisibility>
