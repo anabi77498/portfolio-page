@@ -11,6 +11,7 @@ import stocksTweets from "../assets/img/stocks-tweets.png"
 import jpmcCfg from "../assets/img/jpmc-cfg.jpg"
 import jpmc from "../assets/img/jpmc.png"
 import columbiaHacks from "../assets/img/columbia-hacks.png"
+import harvardHacks from "../assets/img/harvard-hacks.png"
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -55,9 +56,15 @@ export const Projects = () => {
     },
     {
       title: "Columbia DivHacks",
-      description: "(coming soon)",
+      description: "Exclusive invitation to Columbia's premier hackathon",
       imgUrl: columbiaHacks,
       siteUrl: "https://columbiadivhacks.com"
+    },
+    {
+      title: "HarvardHacks",
+      description: "Exclusive invitation to Harvard's premier hackathon",
+      imgUrl: harvardHacks,
+      siteUrl: "https://hackharvard.io"
     }
   ]
 
