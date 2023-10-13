@@ -4,8 +4,10 @@ import projImg1 from "../assets/img/project-img1.png";
 import devDict from "../assets/img/dev-dict.png"
 import appleFest from "../assets/img/applefest.png"
 import planStew from "../assets/img/env.png"
+import medaphor from "../assets/img/medaphor.png"
 import paccoli from "../assets/img/paccoli.png"
 import juice from "../assets/img/juice.png"
+import medScribe from "../assets/img/med-scribe.png"
 import nasa from "../assets/img/nasa.jpg"
 import stocksTweets from "../assets/img/stocks-tweets.png"
 import jpmcCfg from "../assets/img/jpmc-cfg.jpg"
@@ -22,23 +24,29 @@ export const Projects = () => {
 
   const projects_personal = [
     {
-      title: "The Developer Dictionary",
+      title: "Developer Dictionary",
       description: "Full-stack PHP application for simplifying technologies",
       imgUrl: devDict,
       siteUrl: "https://developer-dictionary.fly.dev"
     },
     {
-      title: "Ithaca Harvest Festival Website",
+      title: "Ithaca Harvest Festival",
       description: "Website designed for the Ithaca Harvest Festival",
       imgUrl: appleFest,
       siteUrl: "https://pages.github.coecis.cornell.edu/info1300-2022fa/an448-project3/"
     },
     {
-      title: "Planetary Stewardship & EPA Indicators",
+      title: "Planetary Stewardships",
       description: "ML project centered around climate change insights",
       imgUrl: planStew,
       siteUrl: "https://github.com/anabi77498/EPA-indicators-CC"
     },
+    {
+      title: "Med-aphor",
+      description: "Full-stack app that web scrapes home remedies for health issues using OpenAI & Metaphor",
+      imgUrl: medaphor,
+      siteUrl: "https://github.com/anabi77498/med-aphor"
+    }
   ]
 
   const hackathon_projects = [
@@ -88,6 +96,12 @@ export const Projects = () => {
       description: "Software project lead for research project at NASA Proposal Writing Experience",
       imgUrl: nasa,
       siteUrl: "https://www.lspace.asu.edu"
+    },
+    {
+      title: "Med Scribes",
+      description: "Medical dashboard that streamlines doctor patient communication and tailors treatments",
+      imgUrl: medScribe,
+      siteUrl: "https://github.com/JYasha11/DivHacks2023"
     },
     {
       title: "Stocks and Tweets",
