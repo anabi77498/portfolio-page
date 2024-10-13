@@ -445,7 +445,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
   border-radius: 0;
-  padding: 17px 0;
+  padding: 18px 0;
   color: #fff;
   width: 100%;
   font-size: 17px;
@@ -552,7 +552,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 @media screen and (max-width: 830px) {
   .scale-font {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 

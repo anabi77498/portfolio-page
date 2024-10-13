@@ -14,6 +14,8 @@ import jpmcCfg from "../assets/img/jpmc-cfg.jpg"
 import jpmc from "../assets/img/jpmc.png"
 import columbiaHacks from "../assets/img/columbia-hacks.png"
 import harvardHacks from "../assets/img/harvard-hacks.png"
+import truman from "../assets/img/truman.png"
+import bigRedHacks from "../assets/img/big-red-hacks.png"
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -66,13 +68,19 @@ export const Projects = () => {
       title: "Columbia DivHacks",
       description: "Exclusive invitation to Columbia's premier hackathon",
       imgUrl: columbiaHacks,
-      siteUrl: "https://columbiadivhacks.com"
+      siteUrl: "https://devpost.com/software/medscribe-ipf346"
     },
     {
       title: "HarvardHacks",
       description: "Exclusive invitation to Harvard's premier hackathon",
       imgUrl: harvardHacks,
       siteUrl: "https://hackharvard.io"
+    },
+    {
+      title: "Cornell BigRedHacks",
+      description: "Exclusive invitation to Cornell's premier hackathon",
+      imgUrl: bigRedHacks,
+      siteUrl: "https://devpost.com/software/medcal"
     }
   ]
 
@@ -84,6 +92,12 @@ export const Projects = () => {
       description: "Stony Brook IGEM research team project",
       imgUrl: paccoli,
       siteUrl: "https://2021.igem.org/Team:Stony_Brook/Description"
+    },
+    {
+      title: "Truman AI",
+      description: "Natural Language \"Coding\" Software for Cornell Social Media Research Platform",
+      imgUrl: truman,
+      siteUrl: "https://github.com/cornellsml/truman_2023/tree/ai-code-generation-human-interaction"
     },
     {
       title: "Juice Finance App",
@@ -124,10 +138,10 @@ export const Projects = () => {
                       <Nav.Link eventKey="first"><span className="scale-font">Personal Projects</span></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second"><span className="scale-font scale-font2">Team Projects</span></Nav.Link>
+                      <Nav.Link eventKey="second"><span className="scale-font scale-font2">Group Projects</span></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third"><span className="scale-font">Volunteer Projects</span></Nav.Link>
+                      <Nav.Link eventKey="third"><span className="scale-font">Hackathon Projects</span></Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" >
